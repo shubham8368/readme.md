@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Student Enrollment Form using JPDB</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class = 'page-header text-center'>
+                <h2>Student Enrollment Form using JPDB API</h2>
+            </div>
+            <form id="StudentForm" method="get">
+                <div class="form-group">
+                    <label for="empId">Roll-No: </label>
+                    <input type="number" class="form-control" name="empId" id="Rollno" onchange="getRollno"
+                           placeholder="Enter Roll No." required>
+                </div>
+                <div class="form-group">
+                    <label for="StudentName">Full-Name:</label>
+                    <input type="text" class="form-control" id="FullName"
+                           placeholder="Enter Full-Name" name="Full-Name">
+                </div>
+               
+                <div class="form-group">
+                    <label for="Class">Class:</label>
+                    <input type="number" class="form-control" id="Class"
+                           placeholder="Enter Class" name="Class">
+                </div>
+                <div class="form-group">
+                    <label for="Birth-date">Birth-date:</label>
+                    <input type="number" class="form-control" id="Birthdate"
+                           placeholder="Birth-date" name="Birth-date">
+                </div>
+                <div class="form-group">
+                    <label for="Address">Address:</label>
+                    <input type="text" class="form-control" id="Address"
+                           placeholder="Address" name="Address">
+                </div>
+                <div class="form-group">
+                    <label for="Enrollment-Date">Enrollment-Date:</label>
+                    <input type="number" class="form-control" id="EnrollmentDate"
+                           placeholder="Enter Enrollment-Date" name="Enrollment-Date">
+                </div>
+                
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-lg btn-primary" id="save" onclick="saveData()" disabled>Save</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="change" onclick="changeData()" disabled>Change</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="resetForm()" disabled>Reset</button>
+                </div>
+                
+               
+            </form>
+        </div>
+        <script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
